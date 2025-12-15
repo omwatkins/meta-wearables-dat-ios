@@ -27,8 +27,12 @@
 		8FFD603B2E84342C0035E446 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD60392E84342C0035E446 /* TimeUtils.swift */; };
 		8FFD60542E849D0D0035E446 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD60532E849D0D0035E446 /* RegistrationView.swift */; };
 		8FFD60602E84A2F70035E446 /* MainAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD605F2E84A2F70035E446 /* MainAppView.swift */; };
-		8FFD60612E84A2F70035E446 /* DebugMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD605E2E84A2F70035E446 /* DebugMenuView.swift */; };
-		E66D30242E7DA71900470B48 /* MockDeviceKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66D30232E7DA71900470B48 /* MockDeviceKitButton.swift */; };
+                8FFD60612E84A2F70035E446 /* DebugMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD605E2E84A2F70035E446 /* DebugMenuView.swift */; };
+                E6B000022FB4D53A00E7FE5E /* OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B000062FB4D53A00E7FE5E /* OpenAIClient.swift */; };
+                E6B000032FB4D53A00E7FE5E /* RealtimeVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B000072FB4D53A00E7FE5E /* RealtimeVoiceService.swift */; };
+                E6B000042FB4D53A00E7FE5E /* OpenAIIntegrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B000082FB4D53A00E7FE5E /* OpenAIIntegrationViewModel.swift */; };
+                E6B000052FB4D53A00E7FE5E /* OpenAIIntegrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B000092FB4D53A00E7FE5E /* OpenAIIntegrationView.swift */; };
+                E66D30242E7DA71900470B48 /* MockDeviceKitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66D30232E7DA71900470B48 /* MockDeviceKitButton.swift */; };
 		E6A188482EB918740097D0E1 /* StreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A188472EB918740097D0E1 /* StreamView.swift */; };
 		E6DA451D2E79A63100E3F688 /* MockDeviceCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DA45182E79A63100E3F688 /* MockDeviceCardView.swift */; };
 		E6DA451E2E79A63100E3F688 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DA45172E79A63100E3F688 /* CardView.swift */; };
@@ -69,14 +73,18 @@
 		8FD96B752E6F0A9800F56AB1 /* StreamSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamSessionView.swift; sourceTree = "<group>"; };
 		8FD96B772E6F0A9800F56AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FD96B782E6F0A9800F56AB1 /* CameraAccess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CameraAccess.entitlements; sourceTree = "<group>"; };
-		8FD96B792E6F0A9800F56AB1 /* CameraAccessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessApp.swift; sourceTree = "<group>"; };
-		8FD96B7B2E6F0A9800F56AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8FFD5FF22E8422580035E446 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
-		8FFD5FF32E8422580035E446 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		8FFD60292E8433E20035E446 /* MockDeviceKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeviceKitViewModel.swift; sourceTree = "<group>"; };
-		8FFD602A2E8433E20035E446 /* MockDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeviceViewModel.swift; sourceTree = "<group>"; };
-		8FFD60322E8434070035E446 /* MediaPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerView.swift; sourceTree = "<group>"; };
-		8FFD60332E8434070035E446 /* StatusText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusText.swift; sourceTree = "<group>"; };
+                8FD96B792E6F0A9800F56AB1 /* CameraAccessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAccessApp.swift; sourceTree = "<group>"; };
+                8FD96B7B2E6F0A9800F56AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+                8FFD5FF22E8422580035E446 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+                8FFD5FF32E8422580035E446 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+                8FFD60292E8433E20035E446 /* MockDeviceKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeviceKitViewModel.swift; sourceTree = "<group>"; };
+                8FFD602A2E8433E20035E446 /* MockDeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDeviceViewModel.swift; sourceTree = "<group>"; };
+                E6B000062FB4D53A00E7FE5E /* OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClient.swift; sourceTree = "<group>"; };
+                E6B000072FB4D53A00E7FE5E /* RealtimeVoiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeVoiceService.swift; sourceTree = "<group>"; };
+                E6B000082FB4D53A00E7FE5E /* OpenAIIntegrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIIntegrationViewModel.swift; sourceTree = "<group>"; };
+                E6B000092FB4D53A00E7FE5E /* OpenAIIntegrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIIntegrationView.swift; sourceTree = "<group>"; };
+                8FFD60322E8434070035E446 /* MediaPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPickerView.swift; sourceTree = "<group>"; };
+                8FFD60332E8434070035E446 /* StatusText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusText.swift; sourceTree = "<group>"; };
 		8FFD60392E84342C0035E446 /* TimeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
 		8FFD60532E849D0D0035E446 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		8FFD605E2E84A2F70035E446 /* DebugMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugMenuView.swift; sourceTree = "<group>"; };
@@ -134,15 +142,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8FD96B702E6F0A9800F56AB1 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				8FFD602B2E8433E20035E446 /* MockDeviceKit */,
-				8F2D237F2E856711002D0588 /* DebugMenuViewModel.swift */,
-				8FD96B6F2E6F0A9800F56AB1 /* StreamSessionViewModel.swift */,
-				8F8F00772E8ACB4500A4BDAF /* WearablesViewModel.swift */,
-			);
-			path = ViewModels;
+                8FD96B702E6F0A9800F56AB1 /* ViewModels */ = {
+                        isa = PBXGroup;
+                        children = (
+                                8FFD602B2E8433E20035E446 /* MockDeviceKit */,
+                                8F2D237F2E856711002D0588 /* DebugMenuViewModel.swift */,
+                                E6B000082FB4D53A00E7FE5E /* OpenAIIntegrationViewModel.swift */,
+                                8FD96B6F2E6F0A9800F56AB1 /* StreamSessionViewModel.swift */,
+                                8F8F00772E8ACB4500A4BDAF /* WearablesViewModel.swift */,
+                        );
+                        path = ViewModels;
 			sourceTree = "<group>";
 		};
 		8FD96B762E6F0A9800F56AB1 /* Views */ = {
@@ -150,16 +159,17 @@
 			children = (
 				8FFD5FF42E8422580035E446 /* Components */,
 				E6DA451B2E79A63100E3F688 /* MockDeviceKit */,
-				8FFD605E2E84A2F70035E446 /* DebugMenuView.swift */,
-				8FD96B722E6F0A9800F56AB1 /* HomeScreenView.swift */,
-				8FFD605F2E84A2F70035E446 /* MainAppView.swift */,
-				8FD96B742E6F0A9800F56AB1 /* PhotoPreviewView.swift */,
-				8FFD60532E849D0D0035E446 /* RegistrationView.swift */,
-				8FD96B752E6F0A9800F56AB1 /* StreamSessionView.swift */,
-				E6A188472EB918740097D0E1 /* StreamView.swift */,
-				E6FD3BCD2EB4D53A00E7FE5D /* NonStreamView.swift */,
-			);
-			path = Views;
+                                8FFD605E2E84A2F70035E446 /* DebugMenuView.swift */,
+                                8FD96B722E6F0A9800F56AB1 /* HomeScreenView.swift */,
+                                8FFD605F2E84A2F70035E446 /* MainAppView.swift */,
+                                8FD96B742E6F0A9800F56AB1 /* PhotoPreviewView.swift */,
+                                8FFD60532E849D0D0035E446 /* RegistrationView.swift */,
+                                8FD96B752E6F0A9800F56AB1 /* StreamSessionView.swift */,
+                                E6B000092FB4D53A00E7FE5E /* OpenAIIntegrationView.swift */,
+                                E6A188472EB918740097D0E1 /* StreamView.swift */,
+                                E6FD3BCD2EB4D53A00E7FE5D /* NonStreamView.swift */,
+                        );
+                        path = Views;
 			sourceTree = "<group>";
 		};
 		8FD96B7D2E6F0A9800F56AB1 /* CameraAccess */ = {
@@ -188,14 +198,16 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		8FFD5FF82E8422B60035E446 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				8FFD60392E84342C0035E446 /* TimeUtils.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
+                8FFD5FF82E8422B60035E446 /* Utils */ = {
+                        isa = PBXGroup;
+                        children = (
+                                E6B000062FB4D53A00E7FE5E /* OpenAIClient.swift */,
+                                E6B000072FB4D53A00E7FE5E /* RealtimeVoiceService.swift */,
+                                8FFD60392E84342C0035E446 /* TimeUtils.swift */,
+                        );
+                        path = Utils;
+                        sourceTree = "<group>";
+                };
 		8FFD602B2E8433E20035E446 /* MockDeviceKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,20 +342,24 @@
 				8FFD602C2E8433E20035E446 /* MockDeviceKitViewModel.swift in Sources */,
 				8FFD602D2E8433E20035E446 /* MockDeviceViewModel.swift in Sources */,
 				E6DA451D2E79A63100E3F688 /* MockDeviceCardView.swift in Sources */,
-				8FFD603B2E84342C0035E446 /* TimeUtils.swift in Sources */,
-				E6DA451E2E79A63100E3F688 /* CardView.swift in Sources */,
-				E6DA451F2E79A63100E3F688 /* MockDeviceKitView.swift in Sources */,
-				8FD96B872E6F0A9800F56AB1 /* StreamSessionViewModel.swift in Sources */,
-				8FD96B882E6F0A9800F56AB1 /* StreamSessionView.swift in Sources */,
-				8FFD60602E84A2F70035E446 /* MainAppView.swift in Sources */,
-				8FFD60612E84A2F70035E446 /* DebugMenuView.swift in Sources */,
-				8FD96B8A2E6F0A9800F56AB1 /* PhotoPreviewView.swift in Sources */,
-				E66D30242E7DA71900470B48 /* MockDeviceKitButton.swift in Sources */,
-				8F8F00782E8ACB4600A4BDAF /* WearablesViewModel.swift in Sources */,
-				E6A188482EB918740097D0E1 /* StreamView.swift in Sources */,
-				8FFD5FF52E8422580035E446 /* CircleButton.swift in Sources */,
-				8FFD5FF62E8422580035E446 /* CustomButton.swift in Sources */,
-				E6FD3BCE2EB4D53A00E7FE5D /* NonStreamView.swift in Sources */,
+                                8FFD603B2E84342C0035E446 /* TimeUtils.swift in Sources */,
+                                E6B000022FB4D53A00E7FE5E /* OpenAIClient.swift in Sources */,
+                                E6B000032FB4D53A00E7FE5E /* RealtimeVoiceService.swift in Sources */,
+                                E6DA451E2E79A63100E3F688 /* CardView.swift in Sources */,
+                                E6DA451F2E79A63100E3F688 /* MockDeviceKitView.swift in Sources */,
+                                8FD96B872E6F0A9800F56AB1 /* StreamSessionViewModel.swift in Sources */,
+                                8FD96B882E6F0A9800F56AB1 /* StreamSessionView.swift in Sources */,
+                                E6B000042FB4D53A00E7FE5E /* OpenAIIntegrationViewModel.swift in Sources */,
+                                8FFD60602E84A2F70035E446 /* MainAppView.swift in Sources */,
+                                8FFD60612E84A2F70035E446 /* DebugMenuView.swift in Sources */,
+                                8FD96B8A2E6F0A9800F56AB1 /* PhotoPreviewView.swift in Sources */,
+                                E66D30242E7DA71900470B48 /* MockDeviceKitButton.swift in Sources */,
+                                8F8F00782E8ACB4600A4BDAF /* WearablesViewModel.swift in Sources */,
+                                E6A188482EB918740097D0E1 /* StreamView.swift in Sources */,
+                                E6B000052FB4D53A00E7FE5E /* OpenAIIntegrationView.swift in Sources */,
+                                8FFD5FF52E8422580035E446 /* CircleButton.swift in Sources */,
+                                8FFD5FF62E8422580035E446 /* CustomButton.swift in Sources */,
+                                E6FD3BCE2EB4D53A00E7FE5D /* NonStreamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,7 @@ struct StreamSessionView: View {
   let wearables: WearablesInterface
   @ObservedObject private var wearablesViewModel: WearablesViewModel
   @StateObject private var viewModel: StreamSessionViewModel
+  @StateObject private var aiViewModel = OpenAIIntegrationViewModel()
 
   init(wearables: WearablesInterface, wearablesVM: WearablesViewModel) {
     self.wearables = wearables
@@ -29,7 +30,10 @@ struct StreamSessionView: View {
     ZStack {
       if viewModel.isStreaming {
         // Full-screen video view with streaming controls
-        StreamView(viewModel: viewModel, wearablesVM: wearablesViewModel)
+        StreamView(
+          viewModel: viewModel,
+          wearablesVM: wearablesViewModel,
+          aiViewModel: aiViewModel)
       } else {
         // Pre-streaming setup view with permissions and start button
         NonStreamView(viewModel: viewModel, wearablesVM: wearablesViewModel)

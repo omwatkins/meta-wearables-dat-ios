@@ -9,6 +9,7 @@ A sample iOS application demonstrating integration with Meta Wearables Device Ac
 - Capture photos from glasses
 - Timer-based streaming sessions
 - Share captured photos
+- Analyze frames and try Realtime Voice with OpenAI (set `OPENAI_API_KEY`)
 
 ## Prerequisites
 
@@ -39,6 +40,14 @@ A sample iOS application demonstrating integration with Meta Wearables Device Ac
    - Capture photos
    - View and save captured photos
    - Disconnect from the device
+
+### OpenAI vision + Realtime Voice
+
+1. Export an `OPENAI_API_KEY` in your shell or add it to `CameraAccess/Info.plist`.
+1. Start streaming from the glasses camera.
+1. Tap the ✨ button to open the OpenAI panel.
+1. Use "Analyze current frame" to send the current frame to the `gpt-4o-mini` vision model.
+1. Connect to Realtime Voice and start microphone streaming to talk through the WebSocket API.
 
 ## Troubleshooting
 

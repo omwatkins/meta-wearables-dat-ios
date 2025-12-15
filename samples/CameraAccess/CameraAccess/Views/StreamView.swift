@@ -20,6 +20,8 @@ import SwiftUI
 struct StreamView: View {
   @ObservedObject var viewModel: StreamSessionViewModel
   @ObservedObject var wearablesVM: WearablesViewModel
+  @ObservedObject var aiViewModel: OpenAIIntegrationViewModel
+  @State private var showAIPanel: Bool = false
 
   var body: some View {
     ZStack {
@@ -47,7 +49,9 @@ struct StreamView: View {
 
       VStack {
         Spacer()
-        ControlsView(viewModel: viewModel)
+        ControlsView(viewModel: viewModel) {
+          showAIPanel = true
+        }
       }
       .padding(.all, 24)
       // Timer display area with fixed height
@@ -76,12 +80,17 @@ struct StreamView: View {
         )
       }
     }
+    // OpenAI vision and voice controls
+    .sheet(isPresented: $showAIPanel) {
+      OpenAIIntegrationView(streamViewModel: viewModel, aiViewModel: aiViewModel)
+    }
   }
 }
 
 // Extracted controls for clarity
 struct ControlsView: View {
   @ObservedObject var viewModel: StreamSessionViewModel
+  var onOpenAI: () -> Void
   var body: some View {
     // Controls row
     HStack(spacing: 8) {
@@ -105,6 +114,11 @@ struct ControlsView: View {
       // Photo button
       CircleButton(icon: "camera.fill", text: nil) {
         viewModel.capturePhoto()
+      }
+
+      // OpenAI overlay
+      CircleButton(icon: "sparkles", text: nil) {
+        onOpenAI()
       }
     }
   }
